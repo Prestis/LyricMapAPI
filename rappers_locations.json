@@ -1,0 +1,2186 @@
+{
+    "Ethismos": [
+        {
+            "location": "αθήνα",
+            "song": "Γένvημα Θρέμμα (Gennima Thremma)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "καλλιάνι",
+            "song": "Γένvημα Θρέμμα (Gennima Thremma)",
+            "lat": 37.5878,
+            "lng": 22.4567
+        },
+        {
+            "location": "πορτογαλία",
+            "song": "Γένvημα Θρέμμα (Gennima Thremma)",
+            "lat": 39.399872,
+            "lng": -8.224454
+        },
+        {
+            "location": "αθήνα",
+            "song": "EL TRÁFICO",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "λισαβόνα",
+            "song": "EL TRÁFICO",
+            "lat": 38.7223,
+            "lng": -9.1393
+        },
+        {
+            "location": "λόφο του στρέφη",
+            "song": "Millennials",
+            "lat": 37.9839,
+            "lng": 23.7347
+        },
+        {
+            "location": "πλατεία μαβίλης",
+            "song": "The Town",
+            "lat": 37.9824,
+            "lng": 23.7538
+        },
+        {
+            "location": "κερκύρας",
+            "song": "The Town",
+            "lat": 39.6243,
+            "lng": 19.9217
+        },
+        {
+            "location": "αθήνα",
+            "song": "The Town",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "boston",
+            "song": "The Town",
+            "lat": 42.3601,
+            "lng": -71.0589
+        },
+        {
+            "location": "πάρκο εδέμ",
+            "song": "The Town",
+            "lat": 37.9157,
+            "lng": 23.7088
+        },
+        {
+            "location": "κένυα",
+            "song": "The Town",
+            "lat": -1.286389,
+            "lng": 36.817223
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Η Ευκαιρία Μου (I Efkairia Mou)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "αθήνα",
+            "song": "Η Ευκαιρία Μου (I Efkairia Mou)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "λυκαβηττό",
+            "song": "Fuck ’em All",
+            "lat": 37.9804,
+            "lng": 23.7461
+        },
+        {
+            "location": "mall arte pove",
+            "song": "Fuck ’em All",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "αττική",
+            "song": "Fuck ’em All",
+            "lat": 38.0706,
+            "lng": 23.675
+        },
+        {
+            "location": "μπογκοτά",
+            "song": "BOGOTA",
+            "lat": 4.711,
+            "lng": -74.0721
+        },
+        {
+            "location": "αθήνα",
+            "song": "BOGOTA",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "στουρναρη",
+            "song": "BOGOTA",
+            "lat": 37.9866,
+            "lng": 23.7297
+        },
+        {
+            "location": "σόλωνος",
+            "song": "BOGOTA",
+            "lat": 37.9792,
+            "lng": 23.7366
+        },
+        {
+            "location": "γκύζη",
+            "song": "BOGOTA",
+            "lat": 37.9936,
+            "lng": 23.7538
+        },
+        {
+            "location": "τίρανα",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": 41.3275,
+            "lng": 19.8187
+        },
+        {
+            "location": "rio seco",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "μάρνης",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "παρθενώνα",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": 37.9715,
+            "lng": 23.7267
+        },
+        {
+            "location": "αθήνα",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ποσειδώνα",
+            "song": "Σύμπαν 25 (Simpan 25)",
+            "lat": 37.9304,
+            "lng": 23.7314
+        },
+        {
+            "location": "athen",
+            "song": "Made In Athens",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "άρειο πάγο",
+            "song": "Made In Athens",
+            "lat": 37.9714,
+            "lng": 23.7258
+        },
+        {
+            "location": "καρχηδόνα",
+            "song": "Made In Athens",
+            "lat": 36.8535,
+            "lng": 10.3242
+        },
+        {
+            "location": "γκύζη",
+            "song": "Made In Athens",
+            "lat": 37.9936,
+            "lng": 23.7547
+        },
+        {
+            "location": "athens",
+            "song": "Made In Athens",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ισπανία",
+            "song": "Σινεμά Γαλαξίας (Cinema Galaxias)",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "villa caldera",
+            "song": "Σινεμά Γαλαξίας (Cinema Galaxias)",
+            "lat": 36.4253,
+            "lng": 25.4245
+        },
+        {
+            "location": "las palmas",
+            "song": "Σινεμά Γαλαξίας (Cinema Galaxias)",
+            "lat": 28.1235,
+            "lng": -15.4366
+        },
+        {
+            "location": "μπολόνια",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 44.4949,
+            "lng": 11.3426
+        },
+        {
+            "location": "galicia",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 42.9234,
+            "lng": -7.8967
+        },
+        {
+            "location": "πορτογάλος",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 38.0167,
+            "lng": 23.7333
+        },
+        {
+            "location": "βουδαπέστη",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 47.4979,
+            "lng": 19.0402
+        },
+        {
+            "location": "λετονία",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 56.8796,
+            "lng": 24.6032
+        },
+        {
+            "location": "ουκρανία",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 48.3794,
+            "lng": 31.1656
+        },
+        {
+            "location": "μπαγκλαντές",
+            "song": "ΠΟΡΤΟΓΆΛΟΣ (Portuguese)",
+            "lat": 23.685,
+            "lng": 90.3563
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Πρωτεύουσα (Protevousa)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "αθήνα",
+            "song": "Πρωτεύουσα (Protevousa)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "βολιβία",
+            "song": "Πρωτεύουσα (Protevousa)",
+            "lat": -16.2902,
+            "lng": -63.5887
+        },
+        {
+            "location": "ath, athens",
+            "song": "Πρωτεύουσα (Protevousa)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "γκυζη",
+            "song": "FACE CONTROL",
+            "lat": 37.9946,
+            "lng": 23.7505
+        },
+        {
+            "location": "ολυμπιου διος",
+            "song": "FACE CONTROL",
+            "lat": 37.9678,
+            "lng": 23.7336
+        },
+        {
+            "location": "καλβου",
+            "song": "FACE CONTROL",
+            "lat": 37.9898,
+            "lng": 23.7314
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Revanche",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "medellín",
+            "song": "Revanche",
+            "lat": 6.2442,
+            "lng": -75.5736
+        },
+        {
+            "location": "πετράλωνα",
+            "song": "BLUE JEANS",
+            "lat": 37.9675,
+            "lng": 23.7125
+        },
+        {
+            "location": "πύρρο",
+            "song": "BLUE JEANS",
+            "lat": 39.5414,
+            "lng": 20.8542
+        },
+        {
+            "location": "θεσσαλονίκη",
+            "song": "BLUE JEANS",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "αθήνα",
+            "song": "BLUE JEANS",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "κυψέλη, γκύζη, περιστέρι",
+            "song": "BLUE JEANS",
+            "lat": 38.0003,
+            "lng": 23.7371
+        },
+        {
+            "location": "σκλαβενίτη",
+            "song": "BLUE JEANS",
+            "lat": 38.0006,
+            "lng": 23.7314
+        },
+        {
+            "location": "athens city",
+            "song": "BLUE JEANS",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αττικό άλσος",
+            "song": "BLUE JEANS",
+            "lat": 38.0033,
+            "lng": 23.7547
+        },
+        {
+            "location": "βαρκελώνη",
+            "song": "Olivais Sul",
+            "lat": 41.3851,
+            "lng": 2.1734
+        },
+        {
+            "location": "olivais",
+            "song": "Olivais Sul",
+            "lat": 38.7663,
+            "lng": -9.1172
+        },
+        {
+            "location": "lisboa",
+            "song": "Olivais Sul",
+            "lat": 38.7223,
+            "lng": -9.1393
+        },
+        {
+            "location": "πορτογαλία",
+            "song": "Documento",
+            "lat": 39.399872,
+            "lng": -8.224454
+        },
+        {
+            "location": "ιταλία",
+            "song": "Documento",
+            "lat": 41.8719,
+            "lng": 12.5674
+        },
+        {
+            "location": "ισπανία",
+            "song": "Documento",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "broadway",
+            "song": "Documento",
+            "lat": 38.0028,
+            "lng": 23.7314
+        },
+        {
+            "location": "porto",
+            "song": "Documento",
+            "lat": 41.1579,
+            "lng": -8.6291
+        },
+        {
+            "location": "γερμανία",
+            "song": "Documento",
+            "lat": 51.165691,
+            "lng": 10.451526
+        },
+        {
+            "location": "γαλλία",
+            "song": "Documento",
+            "lat": 46.2276,
+            "lng": 2.2137
+        },
+        {
+            "location": "γαλατσίου",
+            "song": "Μπλόκο (Mploko)",
+            "lat": 38.0125,
+            "lng": 23.7547
+        },
+        {
+            "location": "κυψέλης",
+            "song": "Μπλόκο (Mploko)",
+            "lat": 38.0016,
+            "lng": 23.7383
+        },
+        {
+            "location": "mars",
+            "song": "Mojo",
+            "lat": 34.4087,
+            "lng": 132.4831
+        },
+        {
+            "location": "αθήνα",
+            "song": "Mojo",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "λακωνία",
+            "song": "Mojo",
+            "lat": 36.9167,
+            "lng": 22.5167
+        }
+    ],
+    "Light": [
+        {
+            "location": "rotterdam",
+            "song": "Mosca",
+            "lat": 51.9225,
+            "lng": 4.47917
+        },
+        {
+            "location": "αφρική",
+            "song": "Ποιος Είμαι (Poios Eimai)",
+            "lat": -8.7832,
+            "lng": 34.5085
+        },
+        {
+            "location": "τσιμισκή",
+            "song": "Ποιος Είμαι (Poios Eimai)",
+            "lat": 40.6328,
+            "lng": 22.9439
+        },
+        {
+            "location": "dubai",
+            "song": "POLO",
+            "lat": 25.2048,
+            "lng": 55.2708
+        },
+        {
+            "location": "barcelona",
+            "song": "POLO",
+            "lat": 41.3851,
+            "lng": 2.1734
+        },
+        {
+            "location": "πεντέλη",
+            "song": "POLO",
+            "lat": 38.0581,
+            "lng": 23.8584
+        },
+        {
+            "location": "αθήνα",
+            "song": "ΧΙΛΙΟΜΕΤΡΑ (XILIOMETRA)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ελλάδα",
+            "song": "ΧΙΛΙΟΜΕΤΡΑ (XILIOMETRA)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "narnia",
+            "song": "Primo",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "λύκειο",
+            "song": "Primo",
+            "lat": 37.9715,
+            "lng": 23.7431
+        },
+        {
+            "location": "μύκονο",
+            "song": "Primo",
+            "lat": 37.4467,
+            "lng": 25.3289
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Slang",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "hong kong",
+            "song": "Slang",
+            "lat": 22.3193,
+            "lng": 114.1694
+        },
+        {
+            "location": "μαξίμου",
+            "song": "Ανεξάρτητα (Anexartita)",
+            "lat": 37.9734,
+            "lng": 23.7408
+        },
+        {
+            "location": "κέρκυρα",
+            "song": "Ανεξάρτητα (Anexartita)",
+            "lat": 39.6244,
+            "lng": 19.9217
+        },
+        {
+            "location": "πάτρα",
+            "song": "Ανεξάρτητα (Anexartita)",
+            "lat": 38.2462,
+            "lng": 21.735
+        },
+        {
+            "location": "παράδεισο",
+            "song": "Τι Φοβάσαι (Ti Fovasai)",
+            "lat": 38.0375,
+            "lng": 23.8054
+        },
+        {
+            "location": "άδη",
+            "song": "Τι Φοβάσαι (Ti Fovasai)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Γυμνή (Gymni)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "king kong",
+            "song": "Lobby",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "παρίσι",
+            "song": "Lobby",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "μόσχα",
+            "song": "Neymar",
+            "lat": 55.7558,
+            "lng": 37.6173
+        },
+        {
+            "location": "5th ave",
+            "song": "Neymar",
+            "lat": 40.7614,
+            "lng": -73.9776
+        }
+    ],
+    "Snik": [
+        {
+            "location": "μιλάνο",
+            "song": "Señorita",
+            "lat": 45.4642,
+            "lng": 9.19
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Colpo Grosso",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "βαλκάνια",
+            "song": "Colpo Grosso",
+            "lat": 44.5714,
+            "lng": 21.8039
+        },
+        {
+            "location": "milano",
+            "song": "Colpo Grosso",
+            "lat": 45.4642,
+            "lng": 9.19
+        },
+        {
+            "location": "santorini",
+            "song": "Colpo Grosso",
+            "lat": 36.3932,
+            "lng": 25.4615
+        },
+        {
+            "location": "ibiza",
+            "song": "Colpo Grosso",
+            "lat": 38.9067,
+            "lng": 1.4206
+        },
+        {
+            "location": "napoli",
+            "song": "Colpo Grosso",
+            "lat": 40.8518,
+            "lng": 14.2681
+        },
+        {
+            "location": "marbella",
+            "song": "Colpo Grosso",
+            "lat": 36.5117,
+            "lng": -4.8856
+        },
+        {
+            "location": "ελλάδα",
+            "song": "NANA",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "champs-élysées",
+            "song": "NANA",
+            "lat": 48.8698,
+            "lng": 2.3075
+        },
+        {
+            "location": "ελλάδα",
+            "song": "9",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "αθήνα",
+            "song": "Dominicana Latina",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "κηφισό",
+            "song": "Chinchilla",
+            "lat": 38.0076,
+            "lng": 23.6738
+        },
+        {
+            "location": "benzo",
+            "song": "Cubano",
+            "lat": null,
+            "lng": null
+        }
+    ],
+    "Trannos": [
+        {
+            "location": "κορυδαλλό",
+            "song": "COCO",
+            "lat": 37.9839,
+            "lng": 23.6499
+        },
+        {
+            "location": "trannoιό",
+            "song": "COCO",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "γιάννενα-αργυρόκαστρο",
+            "song": "COCO",
+            "lat": 39.6631,
+            "lng": 20.8523
+        },
+        {
+            "location": "ταλαβέρι",
+            "song": "Μαύρο Γυαλί (Mauro Gyali)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "μύκονο",
+            "song": "No Sleep",
+            "lat": 37.4467,
+            "lng": 25.3289
+        },
+        {
+            "location": "ibiza",
+            "song": "Ibiza",
+            "lat": 38.9067,
+            "lng": 1.4206
+        },
+        {
+            "location": "πανόρμου",
+            "song": "Panama",
+            "lat": 37.9868,
+            "lng": 23.7621
+        },
+        {
+            "location": "κρήτη",
+            "song": "Panama",
+            "lat": 35.2401,
+            "lng": 24.8093
+        }
+    ],
+    "Toquel": [
+        {
+            "location": "αθήνα",
+            "song": "Stars",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "marrakesh",
+            "song": "Stars",
+            "lat": 31.6295,
+            "lng": -7.9811
+        },
+        {
+            "location": "αθήνα",
+            "song": "Business",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αθήνα",
+            "song": "Netflix",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "marbella",
+            "song": "Sandra",
+            "lat": 36.5117,
+            "lng": -4.8856
+        },
+        {
+            "location": "ευρώπη",
+            "song": "Sandra",
+            "lat": 54.526,
+            "lng": 15.2551
+        },
+        {
+            "location": "ibiza",
+            "song": "Sandra",
+            "lat": 38.9067,
+            "lng": 1.4206
+        },
+        {
+            "location": "καρα",
+            "song": "Sandra",
+            "lat": 38.0772,
+            "lng": 23.7547
+        },
+        {
+            "location": "αθήνα",
+            "song": "Karolina",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αθήνα",
+            "song": "Αυτοκτονία (Aftoktonia)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ποσειδώνος",
+            "song": "G63",
+            "lat": 37.9142,
+            "lng": 23.7058
+        },
+        {
+            "location": "αχαρνών",
+            "song": "G63",
+            "lat": 38.0167,
+            "lng": 23.7333
+        },
+        {
+            "location": "αθήνα",
+            "song": "Kokaina",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "παλιό ψυχικό",
+            "song": "Kokaina",
+            "lat": 38.0075,
+            "lng": 23.7742
+        },
+        {
+            "location": "φλοίσβο",
+            "song": "Kokaina",
+            "lat": 37.9254,
+            "lng": 23.6845
+        },
+        {
+            "location": "κοκαΐνα",
+            "song": "Kokaina",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "beverly hills",
+            "song": "Beverly Hills",
+            "lat": 34.0736,
+            "lng": -118.4004
+        }
+    ],
+    "Mad-clip": [
+        {
+            "location": "μύκονο",
+            "song": "Presidente",
+            "lat": 37.4467,
+            "lng": 25.3289
+        },
+        {
+            "location": "όλυμπο",
+            "song": "Presidente",
+            "lat": 40.0886,
+            "lng": 22.3589
+        },
+        {
+            "location": "casablanca",
+            "song": "Φέρε (Fere)",
+            "lat": 33.589886,
+            "lng": -7.603869
+        },
+        {
+            "location": "california",
+            "song": "Φέρε (Fere)",
+            "lat": 36.7783,
+            "lng": -119.4179
+        }
+    ],
+    "Lex-grc": [
+        {
+            "location": "αθήνα",
+            "song": "Vittorio",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ακρόπολη",
+            "song": "Αλήτικη Αγάπη (Alitiki Agapi)",
+            "lat": 37.9715,
+            "lng": 23.7257
+        },
+        {
+            "location": "depon",
+            "song": "Παυσίπονα (Pafsipona)",
+            "lat": 38.0163,
+            "lng": 23.7058
+        },
+        {
+            "location": "panadol, mes",
+            "song": "Παυσίπονα (Pafsipona)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "θεσσαλονίκη, σόφια, βελιγράδι",
+            "song": "Παυσίπονα (Pafsipona)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "περσία",
+            "song": "Φράχτης (Fraxtis)",
+            "lat": 32.4279,
+            "lng": 53.688
+        },
+        {
+            "location": "πήλιο",
+            "song": "Φράχτης (Fraxtis)",
+            "lat": 39.4333,
+            "lng": 23.1667
+        },
+        {
+            "location": "ταγγέρη",
+            "song": "Φράχτης (Fraxtis)",
+            "lat": 35.7767,
+            "lng": -5.8038
+        },
+        {
+            "location": "βερολίνο",
+            "song": "2017",
+            "lat": 52.52,
+            "lng": 13.405
+        },
+        {
+            "location": "θερμαϊκό",
+            "song": "Χειρότερη Γενιά (Xeiroteri Genia)",
+            "lat": 40.5925,
+            "lng": 22.9461
+        },
+        {
+            "location": "σαλούγκα",
+            "song": "Χειρότερη Γενιά (Xeiroteri Genia)",
+            "lat": 44.4949,
+            "lng": 11.3426
+        },
+        {
+            "location": "εγνατία",
+            "song": "Νυχτερίδες (Nyxterides)",
+            "lat": 40.6331,
+            "lng": 22.9431
+        },
+        {
+            "location": "ηλύσια",
+            "song": "Γρανίτες Και Τσιγάρα (Granites Kai Tsigara)",
+            "lat": 37.9737,
+            "lng": 23.7547
+        },
+        {
+            "location": "μητρόπολη",
+            "song": "Γρανίτες Και Τσιγάρα (Granites Kai Tsigara)",
+            "lat": 39.3621,
+            "lng": 21.9056
+        },
+        {
+            "location": "buenos aires, rio de janeiro",
+            "song": "Καταδίκη (Katadiki)",
+            "lat": -34.6037,
+            "lng": -58.3816
+        },
+        {
+            "location": "θεσσαλονίκη",
+            "song": "Καταδίκη (Katadiki)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "μοντεβίδεο",
+            "song": "Διαστημόπλοια (Diastimoploia)",
+            "lat": -34.8836,
+            "lng": -56.1819
+        },
+        {
+            "location": "hong kong",
+            "song": "Διαστημόπλοια (Diastimoploia)",
+            "lat": 22.3193,
+            "lng": 114.1694
+        },
+        {
+            "location": "ποτάμι",
+            "song": "Απλοί Άνθρωποι (Aploi Anthropoi)",
+            "lat": 38.2466,
+            "lng": 21.7346
+        },
+        {
+            "location": "ποσειδώνιο",
+            "song": "Απλοί Άνθρωποι (Aploi Anthropoi)",
+            "lat": 37.9427,
+            "lng": 23.6894
+        },
+        {
+            "location": "σταυρούπολη",
+            "song": "Απλοί Άνθρωποι (Aploi Anthropoi)",
+            "lat": 40.6667,
+            "lng": 22.9333
+        },
+        {
+            "location": "θέρμη",
+            "song": "Απλοί Άνθρωποι (Aploi Anthropoi)",
+            "lat": 40.5478,
+            "lng": 23.0033
+        },
+        {
+            "location": "κορδελιό, το",
+            "song": "Air Max",
+            "lat": 40.6661,
+            "lng": 22.9097
+        },
+        {
+            "location": "συκιές, ναβαρίνου, ροτόντα",
+            "song": "Air Max",
+            "lat": 40.6328,
+            "lng": 22.9535
+        }
+    ],
+    "Fy": [
+        {
+            "location": "λονδίνο",
+            "song": "Δε Με Θέλουν (De Me Theloun)",
+            "lat": 51.5074,
+            "lng": -0.1278
+        },
+        {
+            "location": "ισπανία",
+            "song": "Νησί (Nisi)",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "λονδίνο",
+            "song": "Funky",
+            "lat": 51.5074,
+            "lng": -0.1278
+        },
+        {
+            "location": "αθήνα",
+            "song": "Celebrity",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "παρίσι",
+            "song": "Celebrity",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "hong-kong",
+            "song": "Την Ψυχολόγο (Tin Psihologo)",
+            "lat": 22.3193,
+            "lng": 114.1694
+        },
+        {
+            "location": "abu dhabi",
+            "song": "Ταπεραμέντο (Taperamento)",
+            "lat": 24.4539,
+            "lng": 54.3773
+        }
+    ],
+    "Sidarta": [
+        {
+            "location": "βερσαλλίες",
+            "song": "MBAPPE",
+            "lat": 48.804864,
+            "lng": 2.120355
+        },
+        {
+            "location": "marrakesh",
+            "song": "MBAPPE",
+            "lat": 31.6295,
+            "lng": -7.9811
+        },
+        {
+            "location": "μαρόκο",
+            "song": "MBAPPE",
+            "lat": 31.7917,
+            "lng": -7.0926
+        },
+        {
+            "location": "αργεντινή",
+            "song": "MEDITERRANEAN",
+            "lat": -34.6037,
+            "lng": -58.3816
+        },
+        {
+            "location": "μιλάνο",
+            "song": "MEDITERRANEAN",
+            "lat": 45.4642,
+            "lng": 9.19
+        },
+        {
+            "location": "paris",
+            "song": "MEDITERRANEAN",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "παπάγου",
+            "song": "ΠΑΠΑΓΟΥ (PAPAGOU)",
+            "lat": 37.9997,
+            "lng": 23.7953
+        },
+        {
+            "location": "αθήνα",
+            "song": "Adrenalina",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αθήνα",
+            "song": "MON AMIE",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "παρίσι",
+            "song": "MON AMIE",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "monte carlo",
+            "song": "EL DOCTOR",
+            "lat": 43.7384,
+            "lng": 7.4246
+        },
+        {
+            "location": "βαλκάνια",
+            "song": "Amazing (Remix)",
+            "lat": 44.5714,
+            "lng": 21.8039
+        }
+    ],
+    "Saske": [
+        {
+            "location": "palestina",
+            "song": "ANBU",
+            "lat": 31.9522,
+            "lng": 35.2332
+        },
+        {
+            "location": "vallecas",
+            "song": "ROYALFLUSH",
+            "lat": 40.3854,
+            "lng": -3.6558
+        },
+        {
+            "location": "playa ne",
+            "song": "ROYALFLUSH",
+            "lat": 38.2577,
+            "lng": 21.7406
+        },
+        {
+            "location": "el palo",
+            "song": "ROYALFLUSH",
+            "lat": 36.7214,
+            "lng": -4.3828
+        },
+        {
+            "location": "toledo",
+            "song": "ROYALFLUSH",
+            "lat": 39.8561,
+            "lng": -4.0244
+        },
+        {
+            "location": "bilbo",
+            "song": "B2B FREESTYLE",
+            "lat": 43.263,
+            "lng": -2.935
+        },
+        {
+            "location": "tulum",
+            "song": "B2B FREESTYLE",
+            "lat": 20.2114,
+            "lng": -87.4654
+        },
+        {
+            "location": "barna",
+            "song": "B2B FREESTYLE",
+            "lat": 41.3851,
+            "lng": 2.1734
+        },
+        {
+            "location": "menorca",
+            "song": "5HOMIEZ",
+            "lat": 39.9496,
+            "lng": 4.1332
+        },
+        {
+            "location": "españa",
+            "song": "I Don’t Give a Fuck (Bonus Track)",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "madrid",
+            "song": "DEATH ROW II",
+            "lat": 40.416775,
+            "lng": -3.70379
+        },
+        {
+            "location": "ferrerías",
+            "song": "DEATH ROW II",
+            "lat": 39.9833,
+            "lng": 4.0167
+        },
+        {
+            "location": "india",
+            "song": "DEATH ROW II",
+            "lat": 20.5937,
+            "lng": 78.9629
+        },
+        {
+            "location": "benz de castro",
+            "song": "DEATH ROW II",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "medellín",
+            "song": "APRENDI DE LOS MEJORES",
+            "lat": 6.2442,
+            "lng": -75.5736
+        },
+        {
+            "location": "menorca",
+            "song": "APRENDI DE LOS MEJORES",
+            "lat": 39.9496,
+            "lng": 4.1039
+        },
+        {
+            "location": "sevilla",
+            "song": "APRENDI DE LOS MEJORES",
+            "lat": 37.3891,
+            "lng": -5.9845
+        },
+        {
+            "location": "california",
+            "song": "APRENDI DE LOS MEJORES",
+            "lat": 36.7783,
+            "lng": -119.4179
+        },
+        {
+            "location": "raval",
+            "song": "APRENDI DE LOS MEJORES",
+            "lat": 41.3789,
+            "lng": 2.1678
+        },
+        {
+            "location": "palermo",
+            "song": "Ponte El Chaquetón (Intro)",
+            "lat": 38.1157,
+            "lng": 13.3615
+        },
+        {
+            "location": "túnez",
+            "song": "BAR$",
+            "lat": 36.8065,
+            "lng": 10.1815
+        },
+        {
+            "location": "menorca",
+            "song": "BAR$",
+            "lat": 39.9496,
+            "lng": 4.0984
+        },
+        {
+            "location": "españa",
+            "song": "TORNAR",
+            "lat": 40.4637,
+            "lng": -3.7492
+        },
+        {
+            "location": "menorca",
+            "song": "TORNAR",
+            "lat": 39.9496,
+            "lng": 4.1084
+        },
+        {
+            "location": "roqueta",
+            "song": "TORNAR",
+            "lat": 36.7645,
+            "lng": -2.9467
+        },
+        {
+            "location": "meseta",
+            "song": "TORNAR",
+            "lat": 40.4168,
+            "lng": -3.7038
+        }
+    ],
+    "Bloody-hawk": [
+        {
+            "location": "ξάνθη",
+            "song": "Το Εικοσάλεπτο (To Eikosalepto)",
+            "lat": 41.1399,
+            "lng": 24.8863
+        },
+        {
+            "location": "κομοτηνή",
+            "song": "Το Εικοσάλεπτο (To Eikosalepto)",
+            "lat": 41.1173,
+            "lng": 25.4055
+        },
+        {
+            "location": "ελλάδα",
+            "song": "KVL 2",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "κρήτη",
+            "song": "KVL 2",
+            "lat": 35.2401,
+            "lng": 24.8093
+        },
+        {
+            "location": "δία",
+            "song": "KVL 2",
+            "lat": 35.15,
+            "lng": 25.4167
+        },
+        {
+            "location": "θράκη",
+            "song": "KVL 2",
+            "lat": 41.1352,
+            "lng": 25.4087
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Αντιγονιδών (Antigonidon)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "ελλάδα",
+            "song": "THE DEAL",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "τίμημα",
+            "song": "THE DEAL",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "μέκκα",
+            "song": "THE DEAL",
+            "lat": 21.4225,
+            "lng": 39.8262
+        },
+        {
+            "location": "colorado",
+            "song": "Βαλαωρίτου (Valaoritou)",
+            "lat": 39.5501,
+            "lng": -105.7821
+        },
+        {
+            "location": "βαλαωρίτου",
+            "song": "Βαλαωρίτου (Valaoritou)",
+            "lat": 40.6356,
+            "lng": 22.9416
+        },
+        {
+            "location": "αχαρνών",
+            "song": "Πάνω (Pano)",
+            "lat": 38.0167,
+            "lng": 23.7333
+        },
+        {
+            "location": "βουλιαγμένη",
+            "song": "Πάνω (Pano)",
+            "lat": 37.8105,
+            "lng": 23.7744
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Μη Σταματάς (Mi Stamatas)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "ήλιο",
+            "song": "Μη Σταματάς (Mi Stamatas)",
+            "lat": 38.3582,
+            "lng": 26.1311
+        },
+        {
+            "location": "πορτογαλία",
+            "song": "MAALOX",
+            "lat": 39.399872,
+            "lng": -8.224454
+        },
+        {
+            "location": "ρώμη",
+            "song": "MAALOX",
+            "lat": 41.9028,
+            "lng": 12.4964
+        },
+        {
+            "location": "αθήνα",
+            "song": "MAALOX",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "άουσβιτς",
+            "song": "MAALOX",
+            "lat": 50.0359,
+            "lng": 19.1783
+        },
+        {
+            "location": "παρίσι",
+            "song": "MAALOX",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "κυψέλη",
+            "song": "MAALOX",
+            "lat": 38.0008,
+            "lng": 23.7386
+        },
+        {
+            "location": "άμστερνταμ",
+            "song": "MAALOX",
+            "lat": 52.3676,
+            "lng": 4.9041
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Κρίμα (Krima)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        }
+    ],
+    "Mente-fuerte": [
+        {
+            "location": "ελλάδα",
+            "song": "Caliente",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "λυκαβηττό",
+            "song": "Oulala",
+            "lat": 37.9804,
+            "lng": 23.7461
+        },
+        {
+            "location": "αθήνα",
+            "song": "Sportex",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αθήνας",
+            "song": "Sportex",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "θεσσαλονίκη",
+            "song": "Sportex",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "ελλάδα",
+            "song": "211",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "αθήνα",
+            "song": "211",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ακρόπολη",
+            "song": "211",
+            "lat": 37.9715,
+            "lng": 23.7257
+        },
+        {
+            "location": "beverly",
+            "song": "Winners",
+            "lat": 34.0736,
+            "lng": -118.4004
+        },
+        {
+            "location": "ακρόπολη",
+            "song": "Los Bandoleros",
+            "lat": 37.9715,
+            "lng": 23.7257
+        },
+        {
+            "location": "ευρώπη",
+            "song": "Los Bandoleros",
+            "lat": 54.526,
+            "lng": 15.2551
+        },
+        {
+            "location": "βόρειο πόλο",
+            "song": "Καρδιά Μου (Kardia Mou)",
+            "lat": 90.0,
+            "lng": 0.0
+        }
+    ],
+    "Fly-lo": [
+        {
+            "location": "θηβών",
+            "song": "Morocco",
+            "lat": 38.0075,
+            "lng": 23.7126
+        },
+        {
+            "location": "κηφισό",
+            "song": "ΚΗΦΙΣΟΣ (KHFISOS)",
+            "lat": 38.0076,
+            "lng": 23.6738
+        },
+        {
+            "location": "αθήνα",
+            "song": "Κόκκινα Μπλε (Kokkina Mple)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "πάτρα",
+            "song": "Κόκκινα Μπλε (Kokkina Mple)",
+            "lat": 38.2462,
+            "lng": 21.735
+        },
+        {
+            "location": "αθήνα",
+            "song": "Lebron",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "σιβηρία",
+            "song": "Lebron",
+            "lat": 60.0,
+            "lng": 105.0
+        },
+        {
+            "location": "μιλανο",
+            "song": "Loyal",
+            "lat": 45.4642,
+            "lng": 9.19
+        },
+        {
+            "location": "μπουρνάζι",
+            "song": "G Walk",
+            "lat": 38.0076,
+            "lng": 23.6931
+        },
+        {
+            "location": "αφγανιστάν",
+            "song": "Prezi",
+            "lat": 33.9391,
+            "lng": 67.71
+        },
+        {
+            "location": "λονδίνο",
+            "song": "LDN",
+            "lat": 51.5074,
+            "lng": -0.1278
+        },
+        {
+            "location": "βολιβία",
+            "song": "El Paso",
+            "lat": -16.2902,
+            "lng": -63.5887
+        },
+        {
+            "location": "κολομβία",
+            "song": "El Paso",
+            "lat": 4.5709,
+            "lng": -74.2973
+        },
+        {
+            "location": "el paso",
+            "song": "El Paso",
+            "lat": 31.7619,
+            "lng": -106.485
+        }
+    ],
+    "Hawk-grc": [
+        {
+            "location": "σαλόνικα",
+            "song": "Deja Vu",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "σαντορίνη",
+            "song": "CELINE",
+            "lat": 36.3932,
+            "lng": 25.4615
+        },
+        {
+            "location": "παρίσι",
+            "song": "CELINE",
+            "lat": 48.8566,
+            "lng": 2.3522
+        },
+        {
+            "location": "αφροδίτη",
+            "song": "MONROE",
+            "lat": 38.0167,
+            "lng": 23.7167
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Εδώ Είναι Ελλάδα (Edo Einai Ellada)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "αθήνα, σαλονίκη, ντου",
+            "song": "Many",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "αθήνα",
+            "song": "Nemesis",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "κοντιζά",
+            "song": "GINA",
+            "lat": 38.0076,
+            "lng": 23.7225
+        },
+        {
+            "location": "σαλόνικα",
+            "song": "Ένα Βράδυ Στη Σαλόνικα (Ena Vradi Sti Salonika)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "σαλόνικα, σαλόνικα",
+            "song": "Ένα Βράδυ Στη Σαλόνικα (Ena Vradi Sti Salonika)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "αθήνα",
+            "song": "Diva",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "ελλάδα",
+            "song": "Diva",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "σαλονίκη",
+            "song": "Diva",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "σαλονίκη",
+            "song": "YEEZY",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "ελλάδα",
+            "song": "JAY-Z",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "ίμια",
+            "song": "JAY-Z",
+            "lat": 37.0783,
+            "lng": 27.1417
+        },
+        {
+            "location": "ελλάδα",
+            "song": "5D",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "ορφέ",
+            "song": "5D",
+            "lat": 41.0768,
+            "lng": 24.8778
+        }
+    ],
+    "Ricta": [
+        {
+            "location": "σαλονίκη",
+            "song": "Gel Burda",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "σαλονίκη",
+            "song": "ΤΟ ΔΩΡΟ (TO DWRO)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "γεννηματά",
+            "song": "Ccinderella",
+            "lat": 38.0031,
+            "lng": 23.7126
+        },
+        {
+            "location": "εγνατία",
+            "song": "ERNEST HEBRARD",
+            "lat": 40.6331,
+            "lng": 22.9431
+        },
+        {
+            "location": "ελλάδα, γεωργία, αλβανία",
+            "song": "ERNEST HEBRARD",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "κωλοδάχτυ",
+            "song": "Fuck Da Police",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "κωλοδάχτυλα",
+            "song": "Fuck Da Police",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "σμύρνη",
+            "song": "Fuck Da Police",
+            "lat": 38.4237,
+            "lng": 27.1428
+        },
+        {
+            "location": "βελβεντό",
+            "song": "BBQ-2",
+            "lat": 40.2458,
+            "lng": 22.0494
+        },
+        {
+            "location": "κορυδαλλό",
+            "song": "BBQ-2",
+            "lat": 37.9839,
+            "lng": 23.6499
+        },
+        {
+            "location": "σαλούγκα",
+            "song": "BBQ-2",
+            "lat": 44.4949,
+            "lng": 11.3426
+        },
+        {
+            "location": "περού",
+            "song": "BBQ-2",
+            "lat": -9.19,
+            "lng": -75.0152
+        },
+        {
+            "location": "παλαιστίνη",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 31.9522,
+            "lng": 35.2332
+        },
+        {
+            "location": "aρχαία aγο",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 37.9745,
+            "lng": 23.7225
+        },
+        {
+            "location": "κρήνη",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 40.6195,
+            "lng": 22.9567
+        },
+        {
+            "location": "θεσσαλονίκης",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "τσινάρι",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 40.6453,
+            "lng": 22.9554
+        },
+        {
+            "location": "παύλου μελά",
+            "song": "Η ΠΟΛΗ ΜΑΣ (I POLI MAS)",
+            "lat": 40.6661,
+            "lng": 22.9405
+        },
+        {
+            "location": "αθήνα",
+            "song": "ΣΕΝΑΡΙΟ (SENARIO)",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "σαλόνικα αθήνα",
+            "song": "ΣΕΝΑΡΙΟ (SENARIO)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "ικτίνου",
+            "song": "ΣΕΝΑΡΙΟ (SENARIO)",
+            "lat": 40.6335,
+            "lng": 22.9439
+        },
+        {
+            "location": "φάληρο",
+            "song": "ΣΕΝΑΡΙΟ (SENARIO)",
+            "lat": 37.9333,
+            "lng": 23.6833
+        },
+        {
+            "location": "χαλκιδική",
+            "song": "BBQ-3",
+            "lat": 40.3582,
+            "lng": 23.4735
+        },
+        {
+            "location": "κρήτη",
+            "song": "BBQ-3",
+            "lat": 35.2401,
+            "lng": 24.8093
+        },
+        {
+            "location": "σέρβο",
+            "song": "BBQ-3",
+            "lat": 40.6385,
+            "lng": 22.9525
+        },
+        {
+            "location": "σερβία",
+            "song": "BBQ-3",
+            "lat": 44.0165,
+            "lng": 21.0059
+        },
+        {
+            "location": "κυψέλη",
+            "song": "Πελάτες (Pelates)",
+            "lat": 38.0008,
+            "lng": 23.7386
+        },
+        {
+            "location": "ίμια",
+            "song": "BBQ",
+            "lat": 37.0783,
+            "lng": 27.1417
+        },
+        {
+            "location": "ναυαρίνου",
+            "song": "CC Girl",
+            "lat": 38.2435,
+            "lng": 21.7347
+        },
+        {
+            "location": "κάστρα",
+            "song": "CC Girl",
+            "lat": 40.6385,
+            "lng": 22.9556
+        },
+        {
+            "location": "θεσσαλονίκη",
+            "song": "CC Girl",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "αυλώνα",
+            "song": "ΑΠΟ ΑΛΛΗ ΜΑΤΙΑ (APO ALLH MATIA)",
+            "lat": 38.2818,
+            "lng": 23.6841
+        },
+        {
+            "location": "χαβάη",
+            "song": "FUEGO",
+            "lat": 38.0055,
+            "lng": 23.7058
+        },
+        {
+            "location": "λονδίνο",
+            "song": "FUEGO",
+            "lat": 51.5074,
+            "lng": -0.1278
+        },
+        {
+            "location": "αθήνα-σ",
+            "song": "FUEGO",
+            "lat": 37.9838,
+            "lng": 23.7275
+        }
+    ],
+    "Vlospa": [
+        {
+            "location": "ειρηνικό",
+            "song": "Μεσάνυχτα (Mesanyxta)",
+            "lat": 0.0,
+            "lng": -150.0
+        },
+        {
+            "location": "ελλάδα",
+            "song": "KTLVN",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "france",
+            "song": "MANY",
+            "lat": 46.2276,
+            "lng": 2.2137
+        },
+        {
+            "location": "grèce",
+            "song": "MANY",
+            "lat": 39.0742,
+            "lng": 21.8243
+        }
+    ],
+    "Ivan-greko": [
+        {
+            "location": "ελλάδα",
+            "song": "SILLY BOY",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "βιετνάμ",
+            "song": "BLACK PHONE MAFIA",
+            "lat": 14.0583,
+            "lng": 108.2772
+        },
+        {
+            "location": "μαζατλαν",
+            "song": "BLACK PHONE MAFIA",
+            "lat": 23.2494,
+            "lng": -106.4116
+        },
+        {
+            "location": "συρια",
+            "song": "BLACK PHONE MAFIA",
+            "lat": 35.0,
+            "lng": 38.0
+        },
+        {
+            "location": "στοκχόλμη",
+            "song": "Jet",
+            "lat": 59.3293,
+            "lng": 18.0686
+        },
+        {
+            "location": "ελλάδα",
+            "song": "PULL UP",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "qatar",
+            "song": "PULL UP",
+            "lat": 25.3548,
+            "lng": 51.1839
+        },
+        {
+            "location": "μαρόκο",
+            "song": "ΣΤΗ ΛΙΣΤΑ (STH LISTA)",
+            "lat": 31.7917,
+            "lng": -7.0926
+        },
+        {
+            "location": "ιταλία",
+            "song": "Pyrex",
+            "lat": 41.8719,
+            "lng": 12.5674
+        },
+        {
+            "location": "σουηδία",
+            "song": "Pyrex",
+            "lat": 60.128161,
+            "lng": 18.643501
+        },
+        {
+            "location": "ρωσία",
+            "song": "Pyrex",
+            "lat": 61.52401,
+            "lng": 105.318756
+        },
+        {
+            "location": "μασσαλία",
+            "song": "Pyrex",
+            "lat": 43.296482,
+            "lng": 5.36978
+        },
+        {
+            "location": "ισπανία",
+            "song": "Pyrex",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "πέραμα",
+            "song": "ΠΙΣΣΑ (PISSA)",
+            "lat": 37.9625,
+            "lng": 23.5911
+        },
+        {
+            "location": "ισπανία",
+            "song": "ΠΙΣΣΑ (PISSA)",
+            "lat": 40.463667,
+            "lng": -3.74922
+        },
+        {
+            "location": "baghdad baghdad",
+            "song": "Trap Mes To Bando",
+            "lat": 33.3152,
+            "lng": 44.3661
+        },
+        {
+            "location": "ελλάς",
+            "song": "ΑΧΑΡΙΣΤΗ (AXARISTI)",
+            "lat": 39.0742,
+            "lng": 21.8243
+        },
+        {
+            "location": "colombia",
+            "song": "LV ΤΣΑΝΤΑ (LV TSANTA)",
+            "lat": 4.5709,
+            "lng": -74.2973
+        },
+        {
+            "location": "μπολι",
+            "song": "LV ΤΣΑΝΤΑ (LV TSANTA)",
+            "lat": 38.0416,
+            "lng": 23.7388
+        },
+        {
+            "location": "βουκουρέστι",
+            "song": "R6",
+            "lat": 44.4268,
+            "lng": 26.1025
+        }
+    ],
+    "Bossikan": [
+        {
+            "location": "αθήνα",
+            "song": "Full Press",
+            "lat": 37.9838,
+            "lng": 23.7275
+        },
+        {
+            "location": "βουλγαρία",
+            "song": "Full Press",
+            "lat": 42.7339,
+            "lng": 25.4858
+        },
+        {
+            "location": "πετρούπολη",
+            "song": "Full Press",
+            "lat": 38.0442,
+            "lng": 23.6872
+        },
+        {
+            "location": "montana",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": 46.8797,
+            "lng": -110.3626
+        },
+        {
+            "location": "τάνια",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "σαλόνικα",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "αρμενία",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": 40.0691,
+            "lng": 45.0382
+        },
+        {
+            "location": "μασωνεία",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": 37.9739,
+            "lng": 23.7431
+        },
+        {
+            "location": "ελλάδα, γεωργία, ρωσία",
+            "song": "XCM (Xapiacocomayro)",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "location": "cali",
+            "song": "Full",
+            "lat": 3.4205,
+            "lng": -76.5225
+        },
+        {
+            "location": "συγκρού",
+            "song": "Full",
+            "lat": 37.9625,
+            "lng": 23.7178
+        },
+        {
+            "location": "japan",
+            "song": "Napoli",
+            "lat": 36.2048,
+            "lng": 138.2529
+        },
+        {
+            "location": "νάπολι",
+            "song": "Napoli",
+            "lat": 40.8518,
+            "lng": 14.2681
+        },
+        {
+            "location": "νεάπολη",
+            "song": "Napoli",
+            "lat": 40.6401,
+            "lng": 22.9444
+        },
+        {
+            "location": "λονδίνο",
+            "song": "Νέα κολόνια (Nea Kolonia)",
+            "lat": 51.5074,
+            "lng": -0.1278
+        },
+        {
+            "location": "κοκαΐνα κολομβία",
+            "song": "Νέα κολόνια (Nea Kolonia)",
+            "lat": 4.570868,
+            "lng": -74.297333
+        },
+        {
+            "location": "αφγανιστάν",
+            "song": "Νέα κολόνια (Nea Kolonia)",
+            "lat": 33.9391,
+            "lng": 67.71
+        },
+        {
+            "location": "γιαννιτσών",
+            "song": "Κατάρες (Katares)",
+            "lat": 40.7937,
+            "lng": 22.4173
+        },
+        {
+            "location": "μητροπάνος",
+            "song": "Salonika",
+            "lat": 38.0163,
+            "lng": 23.7314
+        },
+        {
+            "location": "υμηττό",
+            "song": "Salonika",
+            "lat": 37.9575,
+            "lng": 23.7745
+        },
+        {
+            "location": "βαλαωρίτου",
+            "song": "Salonika",
+            "lat": 40.6356,
+            "lng": 22.9416
+        },
+        {
+            "location": "νεάπολη",
+            "song": "Salonika",
+            "lat": 40.6403,
+            "lng": 22.9439
+        }
+    ]
+}
