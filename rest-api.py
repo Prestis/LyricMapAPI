@@ -1,7 +1,7 @@
 import lyricsgenius
 from dotenv import load_dotenv
 import os
-from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+from gr_nlp_toolkit import Pipeline
 from fastapi import FastAPI, BackgroundTasks, Depends, HTTPException
 from google import genai 
 from google.genai import types
@@ -23,10 +23,7 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 MAX_DAILY_REQUESTS = 10000 
 
 # Load Greek NER pipeline
-model_name = "Davlan/xlm-roberta-base-ner-hrl"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForTokenClassification.from_pretrained(model_name)
-ner_pipeline = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
+ner_pipeline = Pipeline("ner")
 
 # Initialize Database
 init_db()
@@ -81,38 +78,40 @@ def update_api_usage(db: Session, usage: ApiUsage):
     usage.count += 1
     db.commit()
 
-def extract_locations_from_entities(chunk_text, entities, min_score=0.85):
-    locations = []
-    current_start = None
-    current_end = None
-
-    for ent in entities:
-        if ent['entity_group'] == 'LOC' and ent['score'] >= min_score:
-            if current_end is not None and ent['start'] <= current_end + 1:
-                current_end = max(current_end, ent['end'])
-            else:
-                if current_start is not None:
-                    loc_str = chunk_text[current_start:current_end].strip()
-                    if len(loc_str) > 2 and not loc_str.isupper():
-                        locations.append(loc_str)
-                current_start = ent['start']
-                current_end = ent['end']
-
-    if current_start is not None:
-        loc_str = chunk_text[current_start:current_end].strip()
-        if len(loc_str) > 2 and not loc_str.isupper():
-            locations.append(loc_str)
-
-    return list(set(locations))
-
-def extract_locations_ner(text, chunk_size=450):
+def extract_locations_ner(text, chunk_size=200):
     words = text.split()
     chunks = [' '.join(words[i:i + chunk_size]) for i in range(0, len(words), chunk_size)]
     locations = set()
+    
     for chunk in chunks:
-        entities = ner_pipeline(chunk)
-        chunk_locations = extract_locations_from_entities(chunk, entities)
-        locations.update(chunk_locations)
+        try:
+            doc = ner_pipeline(chunk)
+            current_location = []
+            
+            for token in doc.tokens:
+                # gr-nlp-toolkit uses IOBES encoding for NER
+                # S: Single, B: Begin, I: Inside, E: End, O: Outside
+                # Tags include: LOC (Location), GPE (Geo-Political Entity), FAC (Facility)
+                ner_tag = token.ner
+                is_location = any(ner_tag.endswith(t) for t in ["-LOC", "-GPE", "-FAC"])
+                
+                if is_location:
+                    if ner_tag.startswith("S-"):
+                        locations.add(token.text)
+                    elif ner_tag.startswith("B-"):
+                        current_location = [token.text]
+                    elif ner_tag.startswith("I-"):
+                        current_location.append(token.text)
+                    elif ner_tag.startswith("E-"):
+                        current_location.append(token.text)
+                        locations.add(" ".join(current_location))
+                        current_location = []
+                else:
+                    current_location = []
+        except Exception as e:
+            print(f"  [NER ERROR] Failed to process chunk: {e}")
+            continue
+                
     return list(locations)
 
 def get_coordinates(location_name, artist_context, db: Session):
@@ -205,47 +204,52 @@ def process_artist_task(artist_name: str):
                     db.refresh(song_obj)
 
                 print(f"  [PROCESS] {song.title}")
-                if hasattr(song, 'lyrics') and song.lyrics:
-                    song_locations = extract_locations_ner(song.lyrics)
-                    
-                    for loc in song_locations:
-                        try:
-                            # Pass db session to get_coordinates
-                            coords = get_coordinates(loc, artist_name, db)
-                            
-                            if coords == "LIMIT_REACHED":
-                                print(f"!!! Breakpoint: Daily quota reached. Stopping.")
-                                return
+                try:
+                    if hasattr(song, 'lyrics') and song.lyrics:
+                        song_locations = extract_locations_ner(song.lyrics)
+                        
+                        for loc in song_locations:
+                            try:
+                                # Pass db session to get_coordinates
+                                coords = get_coordinates(loc, artist_name, db)
+                                
+                                if coords == "LIMIT_REACHED":
+                                    print(f"!!! Breakpoint: Daily quota reached. Stopping.")
+                                    return
 
-                            # Ensure coords is a dict
-                            if not isinstance(coords, dict):
-                                coords = {"lat": None, "lng": None}
+                                # Ensure coords is a dict
+                                if not isinstance(coords, dict):
+                                    coords = {"lat": None, "lng": None}
 
-                            # Add location mention if not already exists for this song
-                            existing_mention = db.query(LocationMention).filter(
-                                LocationMention.song_id == song_obj.id,
-                                LocationMention.location_name == loc.lower()
-                            ).first()
-                            
-                            if not existing_mention:
-                                new_mention = LocationMention(
-                                    song_id=song_obj.id,
-                                    location_name=loc.lower(),
-                                    lat=coords.get("lat"),
-                                    lng=coords.get("lng")
-                                )
-                                db.add(new_mention)
-                                db.commit()
+                                # Add location mention if not already exists for this song
+                                existing_mention = db.query(LocationMention).filter(
+                                    LocationMention.song_id == song_obj.id,
+                                    LocationMention.location_name == loc.lower()
+                                ).first()
+                                
+                                if not existing_mention:
+                                    new_mention = LocationMention(
+                                        song_id=song_obj.id,
+                                        location_name=loc.lower(),
+                                        lat=coords.get("lat"),
+                                        lng=coords.get("lng")
+                                    )
+                                    db.add(new_mention)
+                                    db.commit()
 
-                            # (15 RPM = 1 call every 4 seconds)
-                            time.sleep(4)
-                        except Exception as loc_e:
-                            print(f"  [ERROR] Failed to process location '{loc}': {loc_e}")
-                            db.rollback()
-                            continue
-                    
-                    song_obj.is_processed = True
-                    db.commit()
+                                # (15 RPM = 1 call every 4 seconds)
+                                time.sleep(4)
+                            except Exception as loc_e:
+                                print(f"  [ERROR] Failed to process location '{loc}': {loc_e}")
+                                db.rollback()
+                                continue
+                        
+                        song_obj.is_processed = True
+                        db.commit()
+                except Exception as song_e:
+                    print(f"  [ERROR] Fatal error processing song '{song.title}': {song_e}")
+                    db.rollback()
+                    continue
             
             print(f"--- Finished updating {artist_name} ---")
         else:
