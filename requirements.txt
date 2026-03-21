@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+lyricsgenius
+python-dotenv
+gr-nlp-toolkit
+google-genai
+pydantic
+python-jose[cryptography]
+passlib
+bcrypt==3.2.0
+python-multipart

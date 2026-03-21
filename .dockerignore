@@ -1,0 +1,26 @@
+# Ignore local environment
+.venv/
+test_venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore VS Code
+.vscode/
+
+# Ignore local database (it will be provided via volume in docker-compose)
+lyricmap.db
+lyricmap.db-journal
+
+# Ignore non-production tools
+tools/
+
+# Ignore notebooks or temp files
+Music_Bar_Rating_Generator.ipynb
+*.log
+.env

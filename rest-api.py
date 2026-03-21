@@ -11,16 +11,61 @@ import json
 import threading
 from fastapi.middleware.cors import CORSMiddleware
 import datetime
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Annotated
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from database import get_db, init_db, Artist, Song, LocationMention, ApiUsage, SessionLocal
+from passlib.context import CryptContext
+from jose import JWTError, jwt
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 # Load environment variables
 load_dotenv()
 GENIUS_TOKEN = os.getenv('GENIUS_TOKEN')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 MAX_DAILY_REQUESTS = 10000 
+
+# JWT Configuration
+SECRET_KEY = os.getenv("SECRET_KEY", "7fd98e0a8b9c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 60
+
+# Password Hashing
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+# Default Admin (In a real app, this should be in the database)
+# admin123 hash
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD_HASH = "$2b$12$UH2T7wSJEdcSfrAbSL6Q0uJT8ramsruDrmf1Uf2Fs5iORBG5iPBPq" 
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+def create_access_token(data: dict):
+    to_encode = data.copy()
+    expire = datetime.datetime.utcnow() + datetime.timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=401,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except JWTError:
+        raise credentials_exception
+    
+    if username != ADMIN_USERNAME:
+        raise credentials_exception
+    return username
 
 # Load Greek NER pipeline
 ner_pipeline = Pipeline("ner")
@@ -44,17 +89,27 @@ app = FastAPI(title="LyricMap API", default_response_class=UnicodeJSONResponse)
 
 # Response Models
 class LocationResponse(BaseModel):
+    id: int
     location: str
     song: str
     lat: Optional[float]
     lng: Optional[float]
+    is_manual: bool
 
     class Config:
         from_attributes = True
 
+class LocationUpdateRequest(BaseModel):
+    lat: float
+    lng: float
+
 class ArtistLocationsResponse(BaseModel):
     artist: str
     mentions: List[LocationResponse]
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
 
 # CORS middleware
 app.add_middleware(
@@ -232,9 +287,15 @@ def process_artist_task(artist_name: str):
                                         song_id=song_obj.id,
                                         location_name=loc.lower(),
                                         lat=coords.get("lat"),
-                                        lng=coords.get("lng")
+                                        lng=coords.get("lng"),
+                                        is_manual=False
                                     )
                                     db.add(new_mention)
+                                    db.commit()
+                                elif not existing_mention.is_manual:
+                                    # Update existing mention if not manual
+                                    existing_mention.lat = coords.get("lat")
+                                    existing_mention.lng = coords.get("lng")
                                     db.commit()
 
                                 # (15 RPM = 1 call every 4 seconds)
@@ -261,6 +322,10 @@ def process_artist_task(artist_name: str):
     finally:
         db.close()
 
+@app.get("/")
+def read_root():
+    return {"message": "LyricMap API is running", "endpoints": ["/locations", "/docs", "/process-all"]}
+
 @app.get("/locations", response_model=List[ArtistLocationsResponse])
 def get_locations(db: Session = Depends(get_db)):
     """Expose the rappers locations from the database."""
@@ -272,10 +337,12 @@ def get_locations(db: Session = Depends(get_db)):
         for song in artist.songs:
             for mention in song.locations:
                 mentions.append(LocationResponse(
+                    id=mention.id,
                     location=mention.location_name,
                     song=song.title,
                     lat=mention.lat,
-                    lng=mention.lng
+                    lng=mention.lng,
+                    is_manual=mention.is_manual
                 ))
         
         if mentions:
@@ -311,6 +378,32 @@ def trigger_artist_processing(artist_name: str, background_tasks: BackgroundTask
     """Trigger processing for a specific artist."""
     background_tasks.add_task(process_artist_task, artist_name)
     return {"message": f"Processing started in background for {artist_name}."}
+
+@app.post("/token", response_model=Token)
+async def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
+    if form_data.username != ADMIN_USERNAME or not verify_password(form_data.password, ADMIN_PASSWORD_HASH):
+        raise HTTPException(status_code=400, detail="Incorrect username or password")
+    
+    access_token = create_access_token(data={"sub": form_data.username})
+    return {"access_token": access_token, "token_type": "bearer"}
+
+@app.put("/locations/{mention_id}")
+def update_location(
+    mention_id: int, 
+    request: LocationUpdateRequest, 
+    db: Annotated[Session, Depends(get_db)], 
+    current_user: Annotated[str, Depends(get_current_user)]
+):
+    """Update a specific location mention's coordinates and mark as manual."""
+    mention = db.query(LocationMention).filter(LocationMention.id == mention_id).first()
+    if not mention:
+        raise HTTPException(status_code=404, detail="Location mention not found")
+    
+    mention.lat = request.lat
+    mention.lng = request.lng
+    mention.is_manual = True
+    db.commit()
+    return {"message": "Location updated successfully", "id": mention_id, "is_manual": True}
 
 if __name__ == "__main__":
     import uvicorn

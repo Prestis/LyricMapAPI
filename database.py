@@ -42,6 +42,7 @@ class LocationMention(Base):
     location_name = Column(String)
     lat = Column(Float, nullable=True)
     lng = Column(Float, nullable=True)
+    is_manual = Column(Boolean, default=False)
 
     song = relationship("Song", back_populates="locations")
 
