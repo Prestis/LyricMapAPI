@@ -53,6 +53,17 @@ class ApiUsage(Base):
     date = Column(Date, unique=True, index=True, default=datetime.date.today)
     count = Column(Integer, default=0)
 
+class Report(Base):
+    __tablename__ = "reports"
+
+    id = Column(Integer, primary_key=True, index=True)
+    location_id = Column(Integer, ForeignKey("location_mentions.id"))
+    report_type = Column(String)
+    suggestion = Column(String, nullable=True)
+    created_at = Column(Date, default=datetime.date.today)
+
+    location = relationship("LocationMention")
+
 def init_db():
     Base.metadata.create_all(bind=engine)
 
