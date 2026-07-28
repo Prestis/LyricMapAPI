@@ -2,7 +2,7 @@ import lyricsgenius
 from dotenv import load_dotenv
 import os
 from gr_nlp_toolkit import Pipeline
-from fastapi import FastAPI, BackgroundTasks, Depends, HTTPException, Request
+from fastapi import FastAPI, BackgroundTasks, Depends, HTTPException, Request, Response, Cookie
 from google import genai 
 from google.genai import types
 import time 
@@ -17,7 +17,7 @@ from sqlalchemy.orm import Session
 from database import get_db, init_db, Artist, Song, LocationMention, ApiUsage, SessionLocal, Report
 from passlib.context import CryptContext
 from jose import JWTError, jwt
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordRequestForm
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
@@ -34,7 +34,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 # Password Hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 
 # Default Admin (In a real app, this should be in the database)
 # admin123 hash
@@ -51,14 +51,15 @@ def create_access_token(data: dict):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+async def get_current_user(access_token: Optional[str] = Cookie(None)):
     credentials_exception = HTTPException(
         status_code=401,
         detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
     )
+    if not access_token:
+        raise credentials_exception
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        payload = jwt.decode(access_token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
         if username is None:
             raise credentials_exception
@@ -113,9 +114,8 @@ class ArtistLocationsResponse(BaseModel):
     artist: str
     mentions: List[LocationResponse]
 
-class Token(BaseModel):
-    access_token: str
-    token_type: str
+class LoginResponse(BaseModel):
+    message: str
 
 class ReportCreateRequest(BaseModel):
     location_id: int
@@ -400,13 +400,30 @@ def trigger_artist_processing(artist_name: str, background_tasks: BackgroundTask
     background_tasks.add_task(process_artist_task, artist_name)
     return {"message": f"Processing started in background for {artist_name}."}
 
-@app.post("/token", response_model=Token)
-async def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
+@app.post("/token", response_model=LoginResponse)
+async def login(response: Response, form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
     if form_data.username != ADMIN_USERNAME or not verify_password(form_data.password, ADMIN_PASSWORD_HASH):
         raise HTTPException(status_code=400, detail="Incorrect username or password")
     
     access_token = create_access_token(data={"sub": form_data.username})
-    return {"access_token": access_token, "token_type": "bearer"}
+    response.set_cookie(
+        key="access_token",
+        value=access_token,
+        httponly=True,
+        samesite="lax",
+        max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60,
+        secure=False  # Set to True in production (requires HTTPS)
+    )
+    return {"message": "Login successful"}
+
+@app.post("/auth/logout")
+async def logout(response: Response):
+    response.delete_cookie(key="access_token", samesite="lax")
+    return {"message": "Logged out successfully"}
+
+@app.get("/auth/me")
+async def get_me(current_user: Annotated[str, Depends(get_current_user)]):
+    return {"username": current_user}
 
 @app.put("/locations/{mention_id}")
 def update_location(
