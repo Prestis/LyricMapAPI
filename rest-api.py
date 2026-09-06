@@ -132,10 +132,13 @@ class ReportResponse(BaseModel):
     suggestion: Optional[str]
     created_at: datetime.date
 
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:4200").split(",")
+COOKIE_SECURE = os.getenv("COOKIE_SECURE", "false").lower() == "true"
+
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"], # Or ["*"] for dev
+    allow_origins=[origin.strip() for origin in ALLOWED_ORIGINS],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -375,7 +378,7 @@ def get_locations(db: Session = Depends(get_db)):
     return response
 
 @app.post("/process-all")
-def trigger_all_processing(background_tasks: BackgroundTasks):
+def trigger_all_processing(background_tasks: BackgroundTasks, current_user: Annotated[str, Depends(get_current_user)]):
     """Trigger processing for all artists in the CSV file."""
     artists_list = []
     if os.path.exists("Greek-Rappers-Genius-API.csv"):
@@ -395,7 +398,7 @@ def trigger_all_processing(background_tasks: BackgroundTasks):
     return {"message": "Processing started in background for all artists."}
 
 @app.post("/process/{artist_name}")
-def trigger_artist_processing(artist_name: str, background_tasks: BackgroundTasks):
+def trigger_artist_processing(artist_name: str, background_tasks: BackgroundTasks, current_user: Annotated[str, Depends(get_current_user)]):
     """Trigger processing for a specific artist."""
     background_tasks.add_task(process_artist_task, artist_name)
     return {"message": f"Processing started in background for {artist_name}."}
@@ -412,7 +415,7 @@ async def login(response: Response, form_data: Annotated[OAuth2PasswordRequestFo
         httponly=True,
         samesite="lax",
         max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60,
-        secure=False  # Set to True in production (requires HTTPS)
+        secure=COOKIE_SECURE
     )
     return {"message": "Login successful"}
 
