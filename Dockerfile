@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Pre-download Greek NLP models to avoid startup delays
-RUN python -c 'from gr_nlp_toolkit import Pipeline; Pipeline("ner")'
+# Pre-download step omitted to stay within low-RAM build limits (512MB RAM)
+# Greek NLP model is loaded lazily on-demand if needed
 
 # Copy the rest of the application code
 COPY . .
