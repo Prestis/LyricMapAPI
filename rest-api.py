@@ -70,8 +70,16 @@ async def get_current_user(access_token: Optional[str] = Cookie(None)):
         raise credentials_exception
     return username
 
-# Load Greek NER pipeline
-ner_pipeline = Pipeline("ner")
+# Lazy load Greek NER pipeline only when explicitly requested
+ner_pipeline = None
+
+def get_ner_pipeline():
+    global ner_pipeline
+    if ner_pipeline is None:
+        print("[NER] Lazy loading Greek NLP Pipeline...")
+        from gr_nlp_toolkit import Pipeline
+        ner_pipeline = Pipeline("ner")
+    return ner_pipeline
 
 # Initialize Database
 init_db()
@@ -132,7 +140,7 @@ class ReportResponse(BaseModel):
     suggestion: Optional[str]
     created_at: datetime.date
 
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://lyricmap.gr").split(",")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://lyricmap.gr,https://lyricmap.gr,http://localhost:4200,http://localhost:3000,http://localhost:5173").split(",")
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "false").lower() == "true"
 
 # CORS middleware
@@ -162,9 +170,10 @@ def extract_locations_ner(text, chunk_size=200):
     chunks = [' '.join(words[i:i + chunk_size]) for i in range(0, len(words), chunk_size)]
     locations = set()
     
+    pipeline = get_ner_pipeline()
     for chunk in chunks:
         try:
-            doc = ner_pipeline(chunk)
+            doc = pipeline(chunk)
             current_location = []
             
             for token in doc.tokens:
