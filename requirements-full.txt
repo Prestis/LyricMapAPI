@@ -3,8 +3,7 @@ uvicorn
 sqlalchemy
 lyricsgenius
 python-dotenv
-# Heavy NLP package (PyTorch) commented out for lightweight 512MB RAM server deployment
-# gr-nlp-toolkit
+gr-nlp-toolkit
 google-genai
 pydantic
 python-jose[cryptography]
