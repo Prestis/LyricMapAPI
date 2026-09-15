@@ -77,8 +77,11 @@ def get_ner_pipeline():
     global ner_pipeline
     if ner_pipeline is None:
         print("[NER] Lazy loading Greek NLP Pipeline...")
-        from gr_nlp_toolkit import Pipeline
-        ner_pipeline = Pipeline("ner")
+        try:
+            from gr_nlp_toolkit import Pipeline
+            ner_pipeline = Pipeline("ner")
+        except ImportError:
+            raise RuntimeError("gr-nlp-toolkit (PyTorch) is not installed on this lightweight API deployment instance.")
     return ner_pipeline
 
 # Initialize Database
