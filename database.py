@@ -42,6 +42,7 @@ class LocationMention(Base):
     location_name = Column(String)
     lat = Column(Float, nullable=True)
     lng = Column(Float, nullable=True)
+    is_manual = Column(Boolean, default=False)
 
     song = relationship("Song", back_populates="locations")
 
@@ -51,6 +52,17 @@ class ApiUsage(Base):
     id = Column(Integer, primary_key=True, index=True)
     date = Column(Date, unique=True, index=True, default=datetime.date.today)
     count = Column(Integer, default=0)
+
+class Report(Base):
+    __tablename__ = "reports"
+
+    id = Column(Integer, primary_key=True, index=True)
+    location_id = Column(Integer, ForeignKey("location_mentions.id"))
+    report_type = Column(String)
+    suggestion = Column(String, nullable=True)
+    created_at = Column(Date, default=datetime.date.today)
+
+    location = relationship("LocationMention")
 
 def init_db():
     Base.metadata.create_all(bind=engine)
