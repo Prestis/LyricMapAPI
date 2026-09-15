@@ -132,7 +132,7 @@ class ReportResponse(BaseModel):
     suggestion: Optional[str]
     created_at: datetime.date
 
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:4200").split(",")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://lyricmap.gr").split(",")
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "false").lower() == "true"
 
 # CORS middleware
